@@ -1,0 +1,79 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Proto\account.proto" />
+    <None Remove="Proto\auction.proto" />
+    <None Remove="Proto\bid.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net5.0\BFAuctions.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net5.0\Proto\Account.cs" />
+    <Compile Include="obj\Debug\net5.0\Proto\AccountGrpc.cs" />
+    <Compile Include="obj\Debug\net5.0\Proto\Auction.cs" />
+    <Compile Include="obj\Debug\net5.0\Proto\AuctionGrpc.cs" />
+    <Compile Include="obj\Debug\net5.0\Proto\Bid.cs" />
+    <Compile Include="obj\Debug\net5.0\Proto\BidGrpc.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="obj\BFAuctions.csproj.nuget.dgspec.json" />
+    <Content Include="obj\Debug\net5.0\BFAuctions.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="obj\BFAuctions.csproj.nuget.g.props" />
+    <None Include="obj\BFAuctions.csproj.nuget.g.targets" />
+    <None Include="obj\Debug\net5.0\apphost.exe" />
+    <None Include="obj\Debug\net5.0\BFAuctions.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net5.0\BFAuctions.assets.cache" />
+    <None Include="obj\Debug\net5.0\BFAuctions.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net5.0\BFAuctions.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net5.0\BFAuctions.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net5.0\dfe805b7589f203f_account.protodep" />
+    <None Include="obj\Debug\net5.0\dfe805b7589f203f_auction.protodep" />
+    <None Include="obj\Debug\net5.0\dfe805b7589f203f_bid.protodep" />
+    <None Include="obj\project.nuget.cache" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Proto\account.proto" />
+    <Protobuf Include="Proto\auction.proto" />
+    <Protobuf Include="Proto\bid.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotNetEnv" Version="2.5.0" />
+    <PackageReference Include="Google.Protobuf" Version="3.19.4" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.42.0" />
+    <PackageReference Include="Grpc.AspNetCore.Web" Version="2.42.0" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.42.0" />
+    <PackageReference Include="Grpc.Net.Client.Web" Version="2.59.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.17">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.17">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="obj\Debug\net5.0\refint\" />
+    <Folder Include="obj\Debug\net5.0\ref\" />
+  </ItemGroup>
+
+</Project>

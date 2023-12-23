@@ -1,0 +1,2 @@
+obj\Debug\net5.0\Proto/Account.cs \
+obj\Debug\net5.0\Proto/AccountGrpc.cs: Proto/account.proto

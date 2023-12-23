@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "BFAuctions.Processors";
+
+service AuctionProcessor {
+  rpc Receive(Auction) returns (Auction);
+  rpc Close(Auction) returns (Auction);
+  rpc Update(Auction) returns (Auction);
+  rpc GetById(Auction) returns (Auction);
+  rpc GetByName(Auction) returns (AuctionList);
+}
+
+message AuctionList {
+  repeated Auction auctions = 1;
+}
+
+message Auction {
+  int64 Id = 1;
+  string item_name = 2;
+  double price = 3;
+} 

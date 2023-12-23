@@ -1,0 +1,2 @@
+obj\Debug\net5.0\Proto/Bid.cs \
+obj\Debug\net5.0\Proto/BidGrpc.cs: Proto/bid.proto

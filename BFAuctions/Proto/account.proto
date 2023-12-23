@@ -1,0 +1,22 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "BFAuctions.Processors";
+
+service AccountProcessor {
+  rpc Receive(Account) returns (Account);
+  rpc GetById(Account) returns (Account);
+  rpc GetAll(Empty) returns (AccountList);
+}
+
+
+message Empty{
+}
+
+message AccountList {
+  repeated Account accounts = 1;
+}
+
+message Account {
+	int64 Id = 1;
+  string account_name = 2;
+} 
